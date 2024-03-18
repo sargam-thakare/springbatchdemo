@@ -15,6 +15,7 @@ public class PersonItemProcessor implements ItemProcessor<Person, Person> {
         final String firstName = person.getName().toUpperCase();
         final String lastName = person.getLastname().toUpperCase();
 
+        System.out.println("testing new brahc feature 1");
         final Person transformedPerson = new Person(firstName, lastName);
 
         log.info("Converting (" + person + ") into (" + transformedPerson + ")");
